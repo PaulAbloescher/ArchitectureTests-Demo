@@ -1,0 +1,49 @@
+@startuml
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+HIDE_STEREOTYPE()
+
+package ConsoleApp {
+package Infrastructure {
+[Services] as ConsoleApp.Infrastructure.Services
+}
+}
+
+package ConsoleApp {
+package Infrastructure {
+[Persistence] as ConsoleApp.Infrastructure.Persistence
+}
+}
+
+package ConsoleApp {
+package Domain {
+[ProductAggregate] as ConsoleApp.Domain.ProductAggregate
+}
+}
+
+package ConsoleApp {
+package Domain {
+[OrderAggregate] as ConsoleApp.Domain.OrderAggregate
+}
+}
+
+package ConsoleApp {
+package Application {
+[Services] as ConsoleApp.Application.Services
+}
+}
+
+package ConsoleApp {
+package Application {
+[Common] as ConsoleApp.Application.Common
+}
+}
+
+[ConsoleApp.Infrastructure.Services] --|> [ConsoleApp.Domain.ProductAggregate]
+[ConsoleApp.Infrastructure.Services] --|> [ConsoleApp.Application.Services]
+[ConsoleApp.Infrastructure.Persistence] --|> [ConsoleApp.Domain.OrderAggregate]
+[ConsoleApp.Domain.OrderAggregate] --|> [ConsoleApp.Domain.ProductAggregate]
+Application -[#blue]> [ConsoleApp.Domain.OrderAggregate]
+[ConsoleApp.Application.Services] --|> [ConsoleApp.Domain.ProductAggregate]
+@enduml

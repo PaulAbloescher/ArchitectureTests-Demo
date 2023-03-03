@@ -1,0 +1,10 @@
+@startuml
+[Application] <<ConsoleApp.Application.*>>
+[Infrastructure] <<ConsoleApp.Infrastructure.*>>
+[Domain] <<ConsoleApp.Domain.*>>
+
+[Application] --> [Domain]
+[Infrastructure] --> [Domain]
+[Infrastructure] --> [Application]
+
+@enduml
