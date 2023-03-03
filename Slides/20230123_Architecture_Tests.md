@@ -1,12 +1,14 @@
 % Architecture Testing
 % Paul-Noel Abloescher
-% February 07, 2023
+% March 07, 2023
 
 ## Contents
 
-- [Example: Clean Architecture](#example-clean-architecture)
+- [Contents](#contents)
+- [Example usecase: Clean Architecture](#example-usecase-clean-architecture)
 - [Why?](#why)
 - [How?](#how)
+- [Availability](#availability)
 - [When not to use?](#when-not-to-use)
 - [Available rules](#available-rules)
 - [Example](#example)
@@ -24,7 +26,7 @@
 
 ## How?
 - Dotnet => Unit Tests that check specified rules (feedback through failing tests)
-- Angular nx => module boundary linting rules (instant feedback)
+- Angular nx (build system) => module boundary linting rules (instant feedback)
 
 ## Availability
 - Compatible with .NET Framework, .NET Core & .NET 5+
@@ -33,9 +35,8 @@
 
 ## When not to use?
 - Usefulness depends on the context
-- May be hard to add to legacy projects
+- Can be hard to add afterwards (legacy applications, ...)
 - Some architectures may be hard to test => vertical slice architecture
-- No silver bullet
 
 ## Available rules
 

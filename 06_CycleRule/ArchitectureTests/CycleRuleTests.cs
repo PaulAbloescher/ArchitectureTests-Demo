@@ -21,7 +21,6 @@ namespace ArchitectureTests
             sliceRule.Check(Architecture);
         }
 
-
         [Fact]
         public void Architecture_AdheresToDiagram()
         {

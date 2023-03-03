@@ -6,5 +6,6 @@ namespace ConsoleApp.Domain.ProductAggregate
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
+        //public FakeOrderRepository FakeOrderRepository { get; set; }
     }
 }
