@@ -12,7 +12,7 @@ string pattern = "ConsoleApp.(**)";
 GivenSlices sliceRule = Slices().MatchingWithPackages(pattern);
 Architecture arch = new ArchLoader().LoadAssembly(typeof(Order).Assembly).Build();
 
-var path = @"..\..\..\..\Diagrams\console_app_diagram.puml";
+var path = @"..\..\..\Diagrams\console_app_diagram.puml";
 
 PlantUmlDefinition.ComponentDiagram().WithDependenciesFromSlices(sliceRule.GetObjects(arch)).WriteToFile(path, new RenderOptions
 {
