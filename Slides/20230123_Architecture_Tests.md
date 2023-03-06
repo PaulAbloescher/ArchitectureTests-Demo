@@ -7,7 +7,7 @@
 - [Why?](#why)
 - [How?](#how)
 - [When not to use?](#when-not-to-use)
-- [Availability](#availability)
+- [Available libraries](#available-libraries)
 - [Example usecase: Clean Architecture](#example-usecase-clean-architecture)
 - [Available rules](#available-rules)
 - [Example](#example)
@@ -28,7 +28,7 @@
 - Can be hard to add afterwards (legacy applications, ...)
 - Some architectures may be hard to test => vertical slice architecture
 
-## Availability
+## Available libraries
 - Compatible with .NET Framework, .NET Core & .NET 5+
     - [ArchUnitNet](https://archunitnet.readthedocs.io/en/latest/)
     - [NetArchTest](https://github.com/BenMorris/NetArchTest)
