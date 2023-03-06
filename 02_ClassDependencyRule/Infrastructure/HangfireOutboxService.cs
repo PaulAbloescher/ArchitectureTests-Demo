@@ -1,12 +1,12 @@
 ﻿using Hangfire;
 
-namespace ArchitectureTests.Infrastructure
+namespace Infrastructure
 {
-    public class CorrectOutboxService
+    public class HangfireOutboxService
     {
         private readonly IBackgroundJobClient _backgroundJobClient;
 
-        public CorrectOutboxService(IBackgroundJobClient backgroundJobClient)
+        public HangfireOutboxService(IBackgroundJobClient backgroundJobClient)
         {
             _backgroundJobClient = backgroundJobClient;
         }

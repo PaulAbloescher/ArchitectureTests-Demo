@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureTests", "03_Inh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureTests", "02_ClassDependencyRule\ArchitectureTests\ArchitectureTests.csproj", "{F2E62E98-6D18-4FD1-9F47-92C28632BAE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureTests", "06_CycleRule\ArchitectureTests\ArchitectureTests.csproj", "{D5F7FDC8-F515-4D84-85C6-4049DFDB6AF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArchitectureTests", "06_CycleRule\ArchitectureTests\ArchitectureTests.csproj", "{D5F7FDC8-F515-4D84-85C6-4049DFDB6AF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "06_CycleRule\ConsoleApp\ConsoleApp.csproj", "{ED4B4ECD-4E40-4CF0-9DC3-53BFF03FF4B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "06_CycleRule\ConsoleApp\ConsoleApp.csproj", "{ED4B4ECD-4E40-4CF0-9DC3-53BFF03FF4B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "02_ClassDependencyRule\Infrastructure\Infrastructure.csproj", "{F8C4731C-E026-4B72-8996-34532FE5ED9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{ED4B4ECD-4E40-4CF0-9DC3-53BFF03FF4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED4B4ECD-4E40-4CF0-9DC3-53BFF03FF4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED4B4ECD-4E40-4CF0-9DC3-53BFF03FF4B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C4731C-E026-4B72-8996-34532FE5ED9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C4731C-E026-4B72-8996-34532FE5ED9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C4731C-E026-4B72-8996-34532FE5ED9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C4731C-E026-4B72-8996-34532FE5ED9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{F2E62E98-6D18-4FD1-9F47-92C28632BAE1} = {99F5A430-A398-4BC7-A1DD-0ACF247E8D68}
 		{D5F7FDC8-F515-4D84-85C6-4049DFDB6AF1} = {55A22AC6-97E7-47D3-9A33-BDAC902E3389}
 		{ED4B4ECD-4E40-4CF0-9DC3-53BFF03FF4B8} = {55A22AC6-97E7-47D3-9A33-BDAC902E3389}
+		{F8C4731C-E026-4B72-8996-34532FE5ED9E} = {99F5A430-A398-4BC7-A1DD-0ACF247E8D68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEF2BECC-A646-47C2-94F7-E61E91388DB2}
