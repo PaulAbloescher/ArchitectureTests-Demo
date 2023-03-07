@@ -4,18 +4,13 @@
 
 ## Contents
 
-- [Contents](#contents)
-- [Example usecase: Clean Architecture](#example-usecase-clean-architecture)
 - [Why?](#why)
 - [How?](#how)
-- [Availability](#availability)
 - [When not to use?](#when-not-to-use)
+- [Available libraries](#available-libraries)
+- [Example usecase: Clean Architecture](#example-usecase-clean-architecture)
 - [Available rules](#available-rules)
 - [Example](#example)
-
-## Example usecase: Clean Architecture
-
-![Clean Architecture](Images/CleanArchitecture.jpg)
 
 ## Why?
 
@@ -28,15 +23,19 @@
 - Dotnet => Unit Tests that check specified rules (feedback through failing tests)
 - Angular nx (build system) => module boundary linting rules (instant feedback)
 
-## Availability
-- Compatible with .NET Framework, .NET Core & .NET 5+
-    - [ArchUnitNet](https://archunitnet.readthedocs.io/en/latest/)
-    - [NetArchTest](https://github.com/BenMorris/NetArchTest)
-
 ## When not to use?
 - Usefulness depends on the context
 - Can be hard to add afterwards (legacy applications, ...)
 - Some architectures may be hard to test => vertical slice architecture
+
+## Available libraries
+- Compatible with .NET Framework, .NET Core & .NET 5+
+    - [ArchUnitNet](https://archunitnet.readthedocs.io/en/latest/)
+    - [NetArchTest](https://github.com/BenMorris/NetArchTest)
+
+## Example usecase: Clean Architecture
+
+![Clean Architecture](Images/CleanArchitecture.jpg)
 
 ## Available rules
 
